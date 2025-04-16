@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+.DS_Store
+
+# Environment variables
+.env
+.env.test
+
+# Postgres volume
+.postgres-data
+
+# Tests
+coverage
