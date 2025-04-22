@@ -1,8 +1,8 @@
 import { execSync } from 'child_process'
 
 async function init() {
-    execSync('docker compose up -d --wait postgres-test')
-    execSync('npx prisma db push')
+    // Apenas aplica o schema no banco já rodando (via GitHub Actions services)
+    execSync('npx prisma db push', { stdio: 'inherit' })
 }
 
 export default init
